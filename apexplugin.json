@@ -1,0 +1,35 @@
+{
+  "name" : "IG - Set items",
+  "version" : "1.0",
+  "description" : "Set page items based on selected rows in Interactive Grid",
+  "keywords" : ["ig", "interactive grid", "items"],
+  "homepage" : "https://github.com/mennooo/orclapex-ig-set-items",
+  "bugs" : {
+    "url" : "https://github.com/mennooo/orclapex-ig-set-items/issues",
+    "email" : "me@menn.ooo"
+  },
+  "license" : "MIT",
+  "author" : {
+    "name" : "Menno Hoogendijk",
+    "email" : "me@menn.ooo",
+    "url" : "http://menn.ooo/",
+    "twitter" : "mennooo",
+    "donationUrl" : "https://www.paypal.me/mennooo"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/mennooo/orclapex-ig-set-items.git"
+  },
+  "oracle" : {
+    "versions" : ["11.2.0.1", "12.1.0.1"],
+    "apex" : {
+      "versions" : ["5.0.0", "5.1.0"],
+      "plugin" : {
+        "internalName" : "MHO.IG_SET_ITEMS",
+        "type" : "dynamic action",
+        "demo" : "https://apex.oracle.com/pls/apex/f?p=115922:6",
+        "previewImage" : "https://raw.githubusercontent.com/mennooo/orclapex-ig-set-items/master/settings.PNG"
+      }
+    }
+  }
+}
