@@ -13,8 +13,9 @@ https://apex.oracle.com/pls/apex/f?p=115922:6
 
 ## Settings
 You can also find an explanation in the help section of the plugin.
+
 | Attribute | Purpose |
-| --- | ---|
+| --- | --- |
 | Primary Key Page Item(s) | Works when you specify IG columns as primary key. Here you assign those column(s) to page items |
 | Column(s) | A comma separated list of columns of which the values will be set into page items |
 | Page Item(s) | A comma separated list of page items of which the column values will be set to |
@@ -23,7 +24,7 @@ You can also find an explanation in the help section of the plugin.
 
 ## Events
 | event | Purpose |
-| --- | ---|
+| --- | --- |
 | Rows selected | Execute something (hide/show region) when at least a single row is selected |
 | No rows selected | Execute something (hide/show region) when no rows are selected |
 
