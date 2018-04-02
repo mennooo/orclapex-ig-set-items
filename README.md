@@ -1,5 +1,5 @@
 # orclapex-ig-set-items
-This plug-in lets you bind APEX page items to Interactive Grid columns and vice-versa. Use advanced IG features declaratively.
+This plug-in lets you bind APEX page items to Interactive Grid columns and vice-versa. A good way to use advanced IG features declaratively.
 
 ## Demo
 https://apex.oracle.com/pls/apex/f?p=115922:6
