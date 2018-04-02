@@ -229,6 +229,7 @@ window.mho = window.mho || {}
 
   DataBindingItem.prototype.setDisabled = function (disabled) {
     this.item$.prop('disabled', disabled)
+    this.item$.css('cursor', (disabled) ? 'not-allowed' : 'auto')
   }
 
   DataBindingItem.prototype.showError = function (error) {
@@ -453,7 +454,8 @@ window.mho = window.mho || {}
   }
 
   DataBindingColumn.prototype.getValue = function () {
-    return this.grid.model.getValue(this.selectedRecords[0], this.columnName)
+    let value = this.grid.model.getValue(this.selectedRecords[0], this.columnName)
+    return value.v || value
   }
 
   DataBindingColumn.prototype.getSelectedRowsValues = function () {
