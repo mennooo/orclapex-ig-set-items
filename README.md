@@ -17,9 +17,9 @@ http://menn.ooo/plug-in-ig-set-items
 ## Settings
 These are the events and actions for the demo application:
 
-![Dynamic action settings](images/plugin-settings_1.PNG)
+![Dynamic action settings](images/plugin-settings.PNG)
 
-You can also find an explanation in the help section of the plugin.
+And below the attribute settings. You can also find an explanation in the help section of the plugin.
 
 ![Attribute settings](images/ig-set-items-attributes.PNG)
 
