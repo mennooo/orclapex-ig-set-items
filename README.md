@@ -15,7 +15,13 @@ http://menn.ooo/plug-in-ig-set-items
 * Disable page items for deleted rows or readonly columns
 
 ## Settings
+These are the events and actions for the demo application:
+
+![Dynamic action settings](images/plugin-settings.PNG)
+
 You can also find an explanation in the help section of the plugin.
+
+![Attribute settings](images/ig-set-items-attributes.PNG)
 
 | Attribute | Purpose |
 | --- | --- |
