@@ -135,7 +135,7 @@ window.mho = window.mho || {}
   }
 
   Binding.prototype.notify = function (event) {
-    let args = Array.from(arguments)
+    let args = Array.prototype.slice.call(arguments)
     let eventObservers = this.observers[event]
     let self = this
     args.shift()
@@ -228,8 +228,8 @@ window.mho = window.mho || {}
   }
 
   DataBindingItem.prototype.setDisabled = function (disabled) {
-    this.item$.prop('disabled', disabled)
-    this.item$.css('cursor', (disabled) ? 'not-allowed' : 'auto')
+    this.item[ disabled ? 'disable' : 'enable' ]()
+    // this.item$.css('cursor', (disabled) ? 'not-allowed' : 'auto')
   }
 
   DataBindingItem.prototype.showError = function (error) {
