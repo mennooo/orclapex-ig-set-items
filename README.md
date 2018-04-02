@@ -29,7 +29,7 @@ You can also find an explanation in the help section of the plugin.
 | No rows selected | Execute something (hide/show region) when no rows are selected |
 
 ## IG Cookbook
-The IG Cookbook application was used as an inspiration for this plugin. The Cookbook application is developed and maintained by John Snyders. You can find the latest version here:
+The IG Cookbook application was used as an inspiration for this plugin. The Cookbook application is developed and maintained by John Snyders. You can find the latest version here:  
 http://hardlikesoftware.com/weblog/2018/01/01/apex-ig-cookbook-for-5-1-4/
 
 ## Future developments
