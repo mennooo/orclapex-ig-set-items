@@ -17,7 +17,7 @@ http://menn.ooo/plug-in-ig-set-items
 ## Settings
 These are the events and actions for the demo application:
 
-![Dynamic action settings](images/plugin-settings.PNG)
+![Dynamic action settings](images/plugin-settings_1.PNG)
 
 You can also find an explanation in the help section of the plugin.
 
@@ -43,3 +43,4 @@ http://hardlikesoftware.com/weblog/2018/01/01/apex-ig-cookbook-for-5-1-4/
 
 ## Future developments
 Please provide feedback in the issues section of this GitHub projects of your requests and bugs.
+
