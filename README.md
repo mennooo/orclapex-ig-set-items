@@ -5,11 +5,11 @@ Set page items based on Interactive Grid selection. This plugin enables you to u
 https://apex.oracle.com/pls/apex/f?p=115922:6
 
 ## Features
-* Set Primary Key values or other columns
+* Set primary key values or other columns based on selected row(s)
 * Two way data binding between columns and page items
-* Multiselection
-* Set grid selection based on item values
-* Disable page items for deleted or readonly columns
+* Multiselection (update multiple rows at the same time)
+* Set grid selection at page load based on item values
+* Disable page items for deleted rows or readonly columns
 
 ## Settings
 You can also find an explanation in the help section of the plugin.
