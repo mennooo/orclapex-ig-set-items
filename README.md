@@ -23,6 +23,8 @@ And below the attribute settings. You can also find an explanation in the help s
 
 ![Attribute settings](images/ig-set-items-attributes.PNG)
 
+Explanation of the attributes.
+
 | Attribute | Purpose |
 | --- | --- |
 | Primary Key Page Item(s) | Works when you specify IG columns as primary key. Here you assign those column(s) to page items. No need to specify the primary key columns, these should be set in the Interactive Grid attributes. Do take care of the page item order of this attributes, it must be the same as the PK column order. |
