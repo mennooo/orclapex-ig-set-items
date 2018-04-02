@@ -43,3 +43,4 @@ http://hardlikesoftware.com/weblog/2018/01/01/apex-ig-cookbook-for-5-1-4/
 
 ## Future developments
 Please provide feedback in the issues section of this GitHub projects of your requests and bugs.
+
