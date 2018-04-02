@@ -1,8 +1,11 @@
 # orclapex-ig-set-items
-Set page items based on Interactive Grid selection. This plugin enables you to use advanced features declaratively.
+This plug-in lets you bind APEX page items to Interactive Grid columns and vice-versa. Use advanced IG features declaratively.
 
 ## Demo
 https://apex.oracle.com/pls/apex/f?p=115922:6
+
+## Blog
+http://menn.ooo/plug-in-ig-set-items
 
 ## Features
 * Set primary key values or other columns based on selected row(s)
