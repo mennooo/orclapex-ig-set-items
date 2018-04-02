@@ -16,11 +16,11 @@ You can also find an explanation in the help section of the plugin.
 
 | Attribute | Purpose |
 | --- | --- |
-| Primary Key Page Item(s) | Works when you specify IG columns as primary key. Here you assign those column(s) to page items |
-| Column(s) | A comma separated list of columns of which the values will be set into page items |
-| Page Item(s) | A comma separated list of page items of which the column values will be set to |
-| Remember active row | Selects rows at pageload by using the Primary Key Page Item(s) |
-| Disable items for non-editable IG | If you use this plugin for readonly purposes only |
+| Primary Key Page Item(s) | Works when you specify IG columns as primary key. Here you assign those column(s) to page items. No need to specify the primary key columns, these should be set in the Interactive Grid attributes. Do take care of the page item order of this attributes, it must be the same as the PK column order. |
+| Column(s) | A comma separated list of columns of which the values will be set into page items. These should be non-primary key columns. |
+| Page Item(s) | A comma separated list of page items of which the column values will be set to. These should be non-primary key page items. Specify them in the same order as the columns. |
+| Remember active row | Selects rows at page load by using the Primary Key Page Item(s) |
+| Disable items for non-editable IG | If you use this plugin for readonly purposes only it will disable all the assigned page items. |
 
 ## Events
 | event | Purpose |
