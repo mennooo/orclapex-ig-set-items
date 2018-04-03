@@ -454,8 +454,19 @@ window.mho = window.mho || {}
   }
 
   DataBindingColumn.prototype.getValue = function () {
-    let value = this.grid.model.getValue(this.selectedRecords[0], this.columnName)
-    return value.v || value
+    let values = []
+    let self = this
+
+    this.selectedRecords.forEach(function (record) {
+      let value = self.grid.model.getValue(record, self.columnName)
+      values.push(value.v || value)
+    })
+
+    if (_allEqual(values)) {
+      return values[0]
+    } else {
+      return ''
+    }
   }
 
   DataBindingColumn.prototype.getSelectedRowsValues = function () {
