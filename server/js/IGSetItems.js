@@ -151,9 +151,6 @@ window.mho = window.mho || {}
     let deferred = $.Deferred()
     let self = this
 
-    // Before checks, set currently selected records
-    this.selectedRecords = this.grid.view$.grid('getSelectedRecords')
-
     // Execute checks and remember which checks failed
     let failedChecks = check.subchecks.filter(function (subcheck) {
       let hasPassed = subcheck.fn.apply(self)
@@ -192,6 +189,7 @@ window.mho = window.mho || {}
     this.item = apex.item(this.itemName)
     this.item$ = $(this.item.node)
     this.ignoreChange = false
+    this.changes = false
 
     // Set way of displaying multiselection
     this.multiSelectionMethod = gMultiSelectionMethods[multiSelectionMethod]
@@ -203,7 +201,11 @@ window.mho = window.mho || {}
 
   DataBindingItem.prototype.initChange = function () {
     let self = this
+    this.item$.on('focus', function () {
+      self.changes = true
+    })
     this.item$.on('change', function () {
+      self.changes = false
       if (self.ignoreChange) {
         return
       }
@@ -699,6 +701,14 @@ window.mho = window.mho || {}
     let selectedRecords = options.da.data.selectedRecords
 
     gridBindings.forEach(function (binding) {
+      // If item has changes, then set column value first
+      if (binding.itemBinding.changes) {
+        binding.itemBinding.notify('change', {
+          value: binding.itemBinding.item.getValue()
+        })
+        binding.itemBinding.ignoreChange = true
+      }
+
       binding.columnBinding.notify('select', selectedRecords)
     })
   }
