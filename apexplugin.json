@@ -1,6 +1,6 @@
 {
   "name" : "IG - Set items",
-  "version" : "1.1",
+  "version" : "1.2",
   "description" : "Set page items based on selected rows in Interactive Grid",
   "keywords" : ["ig", "interactive grid", "items"],
   "homepage" : "https://github.com/mennooo/orclapex-ig-set-items",
