@@ -7,12 +7,12 @@ window.mho = window.mho || {}
   let gMultiSelectionMethods = {
     label: {
       onTrue: function (itemName) {
-        let label$ = $('label[for="' + itemName + '"')
+        let label$ = $('label[for="' + itemName + '"]')
         label$.find('.multi-marker').remove()
         label$.prepend('<span class="fa fa-layers multi-marker u-hot-text" aria-hidden="true"></span> ')
       },
       onFalse: function (itemName) {
-        let label$ = $('label[for="' + itemName + '"')
+        let label$ = $('label[for="' + itemName + '"]')
         label$.find('.multi-marker').remove()
       }
     }
